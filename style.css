@@ -23,8 +23,9 @@ header {
 }
 
 #mascotas {
-    max-width: 98.6vw;
-    margin-top: 10PX;
+    max-width: 98vw;
+    
+
 }
 
 #titulo {
@@ -98,20 +99,48 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-
     #photos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
+        grid-template-areas: 
             "imga imga2"
+            "imgb imgb2"
+            "imgc imgc2"
+            "imgd imgd2";
+            column-gap: 2vw;
+    }
+    #photos img{
+        width: 30vw;
+    }
+    .imga {
+        grid-area: imga;
     }
 
-    #imga {
-        width: 20vw;
+    .imga2 {
+        grid-area: imga2;
     }
 
-    #imga2 {
-        width: 20vw;
+    .imgb {
+        grid-area: imgb;
     }
 
+    .imgb2 {
+        grid-area: imgb2;
+    }
+
+    .imgc {
+        grid-area: imgc;
+    }
+
+    .imgc2 {
+        grid-area: imgc2;
+    }
+
+    .imgd {
+        grid-area: imgd;
+    }
+
+    .imgd2 {
+        grid-area: imgd2;
+    }
 }
