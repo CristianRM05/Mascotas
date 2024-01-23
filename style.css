@@ -13,7 +13,6 @@ body {
         "aside"
         "footer"
     ;
-    
 }
 
 header {
@@ -27,7 +26,8 @@ header {
     max-width: 98.6vw;
     margin-top: 10PX;
 }
-#titulo{
+
+#titulo {
     color: #80B2EC;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.7em;
@@ -43,9 +43,11 @@ article {
     padding-bottom: 10VH;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-h2{
+
+h2 {
     text-align: center;
 }
+
 aside {
     grid-area: aside;
     margin-top: 10vh;
@@ -68,17 +70,17 @@ section {
     grid-area: galery;
 }
 
-#galeria{
+#galeria {
     color: #80B2EC;
     font-size: 1.7em;
     margin-top: 8vh;
 }
+
 footer {
     grid-area: footer;
     background-color: #80B2EC;
     text-align: center;
     height: 8vh;
-    
 }
 
 #photos {
@@ -93,4 +95,23 @@ img {
     margin-top: 2vh;
     text-align: center;
     border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "imga imga2"
+    }
+
+    #imga {
+        width: 20vw;
+    }
+
+    #imga2 {
+        width: 20vw;
+    }
+
 }
