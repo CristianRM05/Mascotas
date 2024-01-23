@@ -112,6 +112,7 @@ img {
     #photos img{
         width: 30vw;
     }
+/*Grid area a todas las imagenes*/
     .imga {
         grid-area: imga;
     }
@@ -144,3 +145,4 @@ img {
         grid-area: imgd2;
     }
 }
+
